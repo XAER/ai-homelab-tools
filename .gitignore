@@ -1,0 +1,41 @@
+# Go build outputs
+/bin/
+ai-homelab-tools
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Coverage and profiling
+coverage*.out
+profile*.out
+*.pprof
+
+# Logs
+*.log
+log/
+logs/
+
+# Environment and secrets
+.env
+.env.*
+.envrc
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.code-workspace
+
+# Temp files
+*.swp
+*.swo
+*~
+tmp/
+.tmp/
+
+# If you vendor dependencies, track vendor/ by default; uncomment to ignore
+# vendor/
