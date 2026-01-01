@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  ai-homelab-tools:
+    container_name: ai-homelab-tools
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ai-homelab-tools:local
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "7070:7070"
+    networks:
+      - homelab
+
+networks:
+  homelab:
+    external: true
+    name: homelab
