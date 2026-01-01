@@ -9,7 +9,7 @@ services:
     image: ai-homelab-tools:local
     restart: unless-stopped
     env_file:
-      - .env
+      - stack.env
     ports:
       - "7070:7070"
     networks:
